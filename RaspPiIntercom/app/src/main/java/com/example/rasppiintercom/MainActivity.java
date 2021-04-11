@@ -8,6 +8,12 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     @Override
@@ -25,7 +31,14 @@ public class MainActivity extends AppCompatActivity {
     */
         EditText editText = (EditText) findViewById(R.id.editText);
         String ip = editText.getText().toString();
-        WebView mWebView = (WebView) findViewById(R.id.camView);
-        mWebView.loadUrl(ip);
+        boolean ip_ad = Pattern.matches("(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}:[0-9]{4}",ip);
+        if(ip_ad==false) {
+            Snackbar mySnackbar = Snackbar.make(view, "Not an IP address", BaseTransientBottomBar.LENGTH_LONG);
+            mySnackbar.show();
+        }
+        else {
+            WebView mWebView = (WebView) findViewById(R.id.camView);
+            mWebView.loadUrl("http://"+ip);
+        }
     }
 }
