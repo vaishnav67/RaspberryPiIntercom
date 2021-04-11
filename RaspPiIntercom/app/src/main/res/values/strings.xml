@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RaspPiIntercom</string>
+    <string name="edit_ip">Enter the IP</string>
+    <string name="button_ok">Ok</string>
+</resources>
