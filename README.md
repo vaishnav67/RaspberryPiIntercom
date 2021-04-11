@@ -1,6 +1,6 @@
 # RaspberryPiIntercom
 CSE3009 IoT Project - Smart Intercom
-18BCE0858, 19BCE2450,19BEC0557
+18BCE0858, 19BCE2450, 19BEC0557
 
 # Setting Up the camera (Motion)
 1. In terminal, run `sudo apt install autoconf automake build-essential pkgconf libtool git libzip-dev libjpeg-dev gettext libmicrohttpd-dev libavformat-dev libavcodec-dev libavutil-dev libswscale-dev libavdevice-dev default-libmysqlclient-dev libpq-dev libsqlite3-dev libwebp-dev motion`
