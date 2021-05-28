@@ -2,6 +2,10 @@
 CSE3009 IoT Project - Smart Intercom
 18BCE0858, 19BCE2450, 19BEC0557
 
+# Parts Used
+1. Push button
+2. Raspberry Pi Camera
+
 # Setting Up the camera (Motion)
 1. In terminal, run `sudo apt install autoconf automake build-essential pkgconf libtool git libzip-dev libjpeg-dev gettext libmicrohttpd-dev libavformat-dev libavcodec-dev libavutil-dev libswscale-dev libavdevice-dev default-libmysqlclient-dev libpq-dev libsqlite3-dev libwebp-dev motion`
 2. Change `/etc/motion/motion.conf` to appropriate settings.
@@ -14,6 +18,9 @@ CSE3009 IoT Project - Smart Intercom
 # Android App
 Built with Android Studio 4.1.3.
 Just open the project folder using Android Studio and run it.
+
+# PushBullet
+1. Get your access token and device name from https://www.pushbullet.com/ and replace them in app.py.
 
 # Flask Server
 1. Run `python3 -m pip install -r requirements.txt` to install all dependencies (Use a virtual environment so that you don't mess up your normal python)
