@@ -3,4 +3,7 @@
     <string name="edit_ip">Enter the IP</string>
     <string name="button_ok">Ok</string>
     <string name="button_unlock">Unlock Door</string>
+    <string name="port_flask">Enter server port:</string>
+    <string name="port_motion">Enter camera port:</string>
+    <string name="action_settings">Settings</string>
 </resources>

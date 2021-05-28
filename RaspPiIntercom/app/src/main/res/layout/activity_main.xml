@@ -7,6 +7,19 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/editTextMotion"
+        android:layout_width="149dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/port_motion"
+        android:inputType="textPersonName"
+        android:text="8081"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextFlask"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
         android:id="@+id/editText"
         android:layout_width="207dp"
         android:layout_height="45dp"
@@ -38,15 +51,17 @@
         android:id="@+id/camView"
         android:layout_width="378dp"
         android:layout_height="347dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFlask" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="unlockDoor"
         android:text="@string/button_unlock"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,4 +69,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/camView"
         app:layout_constraintVertical_bias="0.666" />
+
+    <EditText
+        android:id="@+id/editTextFlask"
+        android:layout_width="149dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="@string/port_flask"
+        android:inputType="textPersonName"
+        android:text="5000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
