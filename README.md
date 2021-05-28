@@ -13,4 +13,8 @@ CSE3009 IoT Project - Smart Intercom
 
 # Android App
 Built with Android Studio 4.1.3.
-Just open the project folder and run it.
+Just open the project folder using Android Studio and run it.
+
+# Flask Server
+1. Run `python3 -m pip install -r requirements.txt` to install all dependencies (Use a virtual environment so that you don't mess up your normal python)
+2. Run `flask run --host=0.0.0.0` and that should start up the flask server in your private network.
