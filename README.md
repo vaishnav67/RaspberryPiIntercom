@@ -26,3 +26,4 @@ Get your access token and device name from https://www.pushbullet.com/ and repla
 ## Flask Server (For API)
 1. Run `python3 -m pip install -r requirements.txt` to install all dependencies (Use a virtual environment so that you don't mess up your normal python)
 2. Run `flask run --host=0.0.0.0` and that should start up the flask server in your private network.
+3. Go to `rasp_ip_addr:port/unlock` to trigger the servo.
