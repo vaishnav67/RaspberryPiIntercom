@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             WebView mWebView = (WebView) findViewById(R.id.camView);
-            mWebView.loadUrl("http://"+ip+motion);
+            mWebView.loadUrl("http://"+ip+":"+motion);
         }
     }
     public void unlockDoor(View view){
